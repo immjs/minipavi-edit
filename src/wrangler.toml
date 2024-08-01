@@ -1,0 +1,3 @@
+name = "minitel"
+main = "worker.js"
+compatibility_date = "2023-08-23"
