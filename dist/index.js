@@ -11,4 +11,5 @@ export default createMinipaviHandler(async (ws) => {
 }, {
     host: '0.0.0.0',
     port: 3000,
+    https: true,
 });
