@@ -10,6 +10,11 @@ export default createMinipaviHandler(
     const stream = new DuplexBridge(ws, { decodeStrings: false });
     const minitel = new Minitel(stream, { localEcho: false });
 
+    const interval = setInterval(() => {
+      if (!stream.writableEnded) stream.write('\x00')
+    }, 10_000);
+    stream.on('end', () => clearInterval(interval));
+
     render(<App />, minitel);
   },
   {
