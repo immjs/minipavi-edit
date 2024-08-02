@@ -7,7 +7,7 @@
   "dependencies": {
     "@cloudflare/workers-types": "^4.20240729.0",
     "lowlight": "^3.1.0",
-    "minitel-minipavi": "^1.1.2",
+    "minitel-minipavi": "^1.2.0",
     "minitel-react": "^4.1.0",
     "ws-duplex-bridge": "^1.0.1"
   },
